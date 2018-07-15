@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Сервіс Обліку Студентів</title>
+  <meta name="description" value="Система Обліку Студентів Навчального Закладу" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/bootstrap/3.3.0/css/bootstrap.min.css">
+  <link rel="stylesheet"
+        href="./css/main.css">
+</head>
+<body>
+
+  <!-- Start Container -->
+  <div class="container">
+
+    <!-- Start Header -->
+    <div class="row" id="header">
+      <div class="col-xs-8">
+        <h1>Форма редагування студента</h1>
+      </div>
+    <!-- End Header -->
+
+    <!-- Start Content Columns -->
+    <div class="row" id="content-columns">
+      <div class="col-xs-12" id="content-column">
+
+        <form>
+          <div class="form-group row">
+            <label for="inputName" class="col-xs-1 col-form-label">Ім'я</label>
+            <div class="col-xs-4">
+              <input type="text" class="form-control" id="inputName" placeholder="Ім'я">
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label for="inputMiddleName" class="col-xs-1 col-form-label">По батькові</label>
+            <div class="col-xs-4">
+              <input type="text" class="form-control" id="inputMiddleName" placeholder="По батькові">
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label for="inputSurname" class="col-xs-1 col-form-label">Прізвище</label>
+            <div class="col-xs-4">
+              <input type="text" class="form-control" id="inputSurname" placeholder="Прізвище">
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label for="inputTicketNumber" class="col-xs-1 col-form-label">№ Білету</label>
+            <div class="col-xs-4">
+              <input type="text" class="form-control" id="inputTicketNumber" placeholder="№ Білету">
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label for="inputBirthDate" class="col-xs-1 col-form-label">Дата народження</label>
+            <div class="col-xs-4">
+              <input type="text" class="form-control" id="inputBirthDate" placeholder="Дата народження">
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label for="inputPhoto" class="col-xs-1 col-form-label">Фото</label>
+            <div class="col-xs-4">
+              <p>Наразі:<span id="blueText">невідомо</span></p>
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label for="inputPhoto" class="col-xs-1 col-form-label">Змінити</label>
+            <div class="col-xs-4">
+              <input type="file" class="form-control" id="inputPhoto" >
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label for="groupSelect" class="col-xs-1 col-form-label">Група</label>
+            <div class="col-xs-4">
+              <select id="groupSelect">
+                <option value="21">Мтм-21</option>
+                <option value="22">Мтм-22</option>
+                <option value="23">Мтм-23</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label for="specialTips" class="col-xs-1 col-form-label">Змінити</label>
+            <div class="col-xs-4">
+              <textarea id="specialTips" rows="5" cols="43">  тест d</textarea>
+            </div>
+          </div>
+
+          <div class="panel-footer">
+            <button type="button" class="btn col-xs-offset-1 btn-primary">Зберегти</button>
+            <button type="button" class="btn" id="bnt-cancel">Скасувати</button>
+          </div>
+
+
+      </div>
+    </div>
+    <!-- End Content Columns -->
+
+    <!-- Start Footer -->
+    <div class="row" id="footer">
+      <div class="col-xs-12">
+        &copy; 2018 Сервіс Обліку Студентів
+      </div>
+    </div>
+    <!-- End Footer -->
+
+  </div>
+  <!-- End Container -->
+
+  <!-- Javascripts Inclusion -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+</body>
+</html>

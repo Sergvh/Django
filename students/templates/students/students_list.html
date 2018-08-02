@@ -1,3 +1,5 @@
+{% load static from staticfiles %}
+
 <!DOCTYPE html>
 <html lang="uk">
 <head>
@@ -9,7 +11,7 @@
   <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/bootstrap/3.3.0/css/bootstrap.min.css">
   <link rel="stylesheet"
-        href="../../../static/css/main.css">
+        href="{% static "css/main.css" %}">
 </head>
 <body>
 
@@ -68,7 +70,7 @@
           <tbody>
             <tr>
               <td>1</td>
-              <td><img class="img-circle" src="../../../static/img/podoba3.jpg" height="30" width="30" /></td>
+              <td><img class="img-circle" src="{% static "img/3.jpg" %}" height="30" width="30" /></td>
               <td><a href="{% url 'students_edit' 1 %}">Потапенко</a> </td>
               <td><a href="{% url 'students_edit' 1 %}">Максим</a></td>
               <td>2123</td>
@@ -88,7 +90,7 @@
             </tr>
             <tr>
               <td>2</td>
-              <td><img class="img-circle" src="../../../static/img/me.jpeg" height="30" width="30" /></td>
+              <td><img class="img-circle" src="{% static "img/2.jpg" %}" height="30" width="30" /></td>
               <td><a href="{% url 'students_edit' 2 %}">Синюткін</a></td>
               <td><a href="{% url 'students_edit' 2 %}">Олег</a></td>
               <td>254</td>
@@ -108,7 +110,7 @@
             </tr>
             <tr>
               <td>3</td>
-              <td><img class="img-circle" src="../../../static/img/piv.png" height="30" width="30" /></td>
+              <td><img class="img-circle" src="{% static "img/1.jpg" %}" height="30" width="30" /></td>
               <td><a href="{% url 'students_edit' 3 %}">Задовий</a></td>
               <td><a href="{% url 'students_edit' 3 %}">Андрій</a></td>
               <td>5332</td>
